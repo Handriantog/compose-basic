@@ -13,8 +13,8 @@
         android:theme="@style/Theme.ComposeBasic"
         tools:targetApi="31">
         <activity
-            android:name=".basiclayoutcodelab.BasicLayoutActivity"
-            android:exported="true">
+            android:name=".basicstatecodelab.BasicStateActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,19 +22,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".basiclayoutcodelab.BasicLayoutActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".codelab.CodelabActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.ComposeBasic"></activity>
+            android:theme="@style/Theme.ComposeBasic" />
     </application>
 
 </manifest>
